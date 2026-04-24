@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Demo Viewer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #111;
+    }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .topbar button {
+      background: #ffffff;
+      color: #111;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .topbar button:hover {
+      background: #ddd;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh - 60px);
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      display: flex;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .page {
+      flex: 0 0 100vw;
+      height: 100%;
+      scroll-snap-align: start;
+      position: relative;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .page iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      background: #fff;
+    }
+
+    .indicator {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: #fff;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <button onclick="scrollToPage(0)">Page 1</button>
+    <button onclick="scrollToPage(1)">Page 2</button>
+    <button onclick="scrollToPage(2)">Page 3</button>
+    <button onclick="scrollToPage(3)">Page 4</button>
+  </div>
+
+  <div class="wrapper" id="wrapper">
+    <section class="page">
+      <iframe src="index1.html" title="Page 1"></iframe>
+    </section>
+
+    <section class="page">
+      <iframe src="index2.html" title="Page 2"></iframe>
+    </section>
+
+    <section class="page">
+      <iframe src="index3.html" title="Page 3"></iframe>
+    </section>
+
+    <section class="page">
+      <iframe src="index4.html" title="Page 4"></iframe>
+    </section>
+  </div>
+
+  <div class="indicator">
+    <div class="dot active" onclick="scrollToPage(0)"></div>
+    <div class="dot" onclick="scrollToPage(1)"></div>
+    <div class="dot" onclick="scrollToPage(2)"></div>
+    <div class="dot" onclick="scrollToPage(3)"></div>
+  </div>
+
+  <script>
+    const wrapper = document.getElementById("wrapper");
+    const dots = document.querySelectorAll(".dot");
+
+    function scrollToPage(index) {
+      wrapper.scrollTo({
+        left: index * window.innerWidth,
+        behavior: "smooth"
+      });
+    }
+
+    wrapper.addEventListener("scroll", () => {
+      const pageIndex = Math.round(wrapper.scrollLeft / window.innerWidth);
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === pageIndex);
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      const pageIndex = Math.round(wrapper.scrollLeft / window.innerWidth);
+      wrapper.scrollTo({
+        left: pageIndex * window.innerWidth,
+        behavior: "auto"
+      });
+    });
+  </script>
+
+</body>
+</html>
