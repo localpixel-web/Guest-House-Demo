@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terra &amp; Timber - Guest House</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#ffffff",
+                      "surface-tint": "#944936",
+                      "secondary-fixed": "#ccead6",
+                      "on-background": "#1b1c19",
+                      "tertiary": "#5d3b14",
+                      "surface": "#fbf9f4",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed-dim": "#b0cdbb",
+                      "primary-container": "#8e4432",
+                      "inverse-on-surface": "#f2f1ec",
+                      "on-secondary-fixed-variant": "#324c3e",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#ffb4a3",
+                      "surface-container-low": "#f5f3ee",
+                      "surface-container": "#f0eee9",
+                      "on-secondary-container": "#4f6a5b",
+                      "on-primary-container": "#ffc3b5",
+                      "inverse-surface": "#30312e",
+                      "secondary": "#496455",
+                      "surface-variant": "#e4e2dd",
+                      "on-tertiary-container": "#fdc895",
+                      "on-secondary-fixed": "#062014",
+                      "surface-container-highest": "#e4e2dd",
+                      "secondary-container": "#ccead6",
+                      "surface-dim": "#dbdad5",
+                      "primary": "#702e1d",
+                      "tertiary-fixed-dim": "#f0bd8b",
+                      "error-container": "#ffdad6",
+                      "on-surface": "#1b1c19",
+                      "outline-variant": "#dac1bc",
+                      "surface-container-high": "#eae8e3",
+                      "on-primary-fixed-variant": "#763221",
+                      "on-tertiary-fixed-variant": "#623f18",
+                      "surface-bright": "#fbf9f4",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#54433f",
+                      "on-primary-fixed": "#3c0700",
+                      "primary-fixed": "#ffdad2",
+                      "primary-fixed-dim": "#ffb4a3",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "outline": "#87726e",
+                      "on-tertiary-fixed": "#2c1600",
+                      "background": "#fbf9f4",
+                      "on-primary": "#ffffff",
+                      "tertiary-container": "#785229",
+                      "tertiary-fixed": "#ffdcbd"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "base": "8px",
+                      "gutter": "24px",
+                      "section-gap": "80px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "h1": [
+                              "Noto Serif"
+                      ],
+                      "h3": [
+                              "Noto Serif"
+                      ],
+                      "label-caps": [
+                              "Be Vietnam Pro"
+                      ],
+                      "h2": [
+                              "Noto Serif"
+                      ],
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "h1": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "h3": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "h2": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-stone-200 dark:border-stone-800 bg-stone-50/95 dark:bg-stone-950/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-serif font-semibold text-[#8E4432] dark:text-[#A66352] font-h3 text-h3 tracking-wide" href="#">
+                Terra &amp; Timber
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#8E4432] dark:text-[#A66352] border-b-2 border-[#8E4432] dark:border-[#A66352] pb-1 font-bold font-serif text-lg tracking-wide hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-lg tracking-wide hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300" href="#">Rooms</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-lg tracking-wide hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300" href="#">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-lg tracking-wide hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<a class="hidden md:flex items-center text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-lg tracking-wide" href="#">
+<span class="material-symbols-outlined mr-2">phone</span>
+                    Call Now
+                </a>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-caps text-label-caps hover:bg-opacity-90 transition-all duration-300 shadow-sm" href="#">
+                    Book Now
+                </a>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-24 pb-section-gap">
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center px-4 md:px-8">
+<div class="absolute inset-0 z-0">
+<img alt="Luxurious guest house exterior with warm lighting at dusk, surrounded by lush nature" class="w-full h-full object-cover" data-alt="Luxurious guest house exterior with warm lighting at dusk, surrounded by lush nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQYxpCZKgvRtZjFEt61JtxX2qpYUxgNY5aKf-3VRsYaX_1sw4GmOKw__JOFcoYEb1Ruoiph-7yyNT2I-0SuYtG2vKYUeYES0pTHDIL9niHrfoHxAcbP4lAk6Tb-dsMDoR7k0ZGgsZghhDK5h5C5lvbo45WDKrCBreuv04HcgmVUEQSLx3jrMnreT0VEKgRkCVwY13aDTxyvqdOupW0_VONUOaJ8KzQ3Weds-rOjvySY7V1JCy6lOEVogEqPa8Z6Abk9rKzs990q1o"/>
+<div class="absolute inset-0 bg-stone-900/40"></div>
+</div>
+<div class="relative z-10 text-center max-w-3xl mx-auto px-4">
+<h1 class="font-h1 text-h1 text-surface-bright mb-6 drop-shadow-md">A Sanctuary of Organic Sophistication</h1>
+<p class="font-body-lg text-body-lg text-surface-bright/90 mb-10 max-w-xl mx-auto drop-shadow">Experience the perfect balance of home comfort and boutique hotel polish in our meticulously cared-for haven.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-caps text-label-caps hover:bg-primary-fixed transition-colors shadow-md w-full sm:w-auto text-center flex items-center justify-center gap-2" href="#">
+<span>Book Your Stay</span>
+</a>
+<a class="bg-surface/20 backdrop-blur-sm border border-surface-bright/50 text-surface-bright px-8 py-4 rounded-full font-label-caps text-label-caps hover:bg-surface/30 transition-colors w-full sm:w-auto text-center flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+<span>Call Now</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Featured Rooms Section -->
+<section class="py-section-gap max-w-container-max mx-auto px-4 md:px-8">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-on-surface mb-4">Curated Spaces</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Each room is thoughtfully designed to provide a restful retreat, featuring natural materials and serene aesthetics.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Room Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(73,100,85,0.08)] hover:shadow-[0_8px_30px_rgba(73,100,85,0.12)] transition-shadow duration-300">
+<div class="aspect-[3/2] overflow-hidden relative">
+<div class="absolute top-4 left-4 z-10 bg-secondary-fixed-dim text-on-secondary-fixed px-3 py-1 rounded-full font-label-caps text-label-caps shadow-sm">Available</div>
+<img alt="Bright, airy guest room with natural wood bed frame and crisp white linens" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Bright, airy guest room with natural wood bed frame and crisp white linens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBHvBAlHNubYgesFQQperhAA6TBvc9CUUMLLhmf2rCd1emUIi6Tzu10XY9P7CRvynD3rqeeMo91UxWT1JCo7tl7y3suTr_omn8EQ1Wpq7oOvx7a-DM0serQwcBMwY4Xe1NUC6ElZcjqgA1ZePapyRbJiuHwFgi5NjxkMIh4Wb86bqQZjVgg7vysEl5SkNwX1QKYnh3NYihkAJfAZcd0a3yxB-QOgAz6QuFaYxkUDAPujiOIwi5pX6s1uDPJfYK2VGq-OQ_qvQ6tvQ"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">The Canopy Suite</h3>
+<div class="flex items-center gap-4 mb-6 text-secondary">
+<span class="material-symbols-outlined text-[20px]" title="King Bed">bed</span>
+<span class="material-symbols-outlined text-[20px]" title="Ensuite Bath">bathtub</span>
+<span class="material-symbols-outlined text-[20px]" title="Forest View">forest</span>
+<span class="material-symbols-outlined text-[20px]" title="Wi-Fi">wifi</span>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<a class="font-body-md text-body-md text-primary font-medium hover:underline" href="#">View Details</a>
+<div class="text-right">
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">From</span>
+<span class="font-h3 text-h3 text-on-surface">$240<span class="font-body-md text-body-md text-on-surface-variant font-normal">/night</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Room Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(73,100,85,0.08)] hover:shadow-[0_8px_30px_rgba(73,100,85,0.12)] transition-shadow duration-300">
+<div class="aspect-[3/2] overflow-hidden relative">
+<img alt="Cozy guest room with warm earthy tones, woven textiles, and large windows" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Cozy guest room with warm earthy tones, woven textiles, and large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3jAe5XKPwbcO_8Smc5o-XLemhnnbrux1Fe-JjP1D5yqegu8aXJYojHtmRkn5i4THibdXhd566z54NA-T5yWw768kY_KxDVWWAxTfLcBnVRBYbnyqK3hZ45Stc6841FUJzKHeNY444bcVgNMVK4ADFdlU4DKE_wc1i1Tzg889xhgYXem7WM-JuhEm5MdhiiLqACYbNVOE20BDK63_R00fvfuF4Q7x1Xx23MH19zSXOxlan1tGqOhomw45DSWBLrNwcAHKbqYBZHEM"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">The Earth Room</h3>
+<div class="flex items-center gap-4 mb-6 text-secondary">
+<span class="material-symbols-outlined text-[20px]" title="Queen Bed">bed</span>
+<span class="material-symbols-outlined text-[20px]" title="Ensuite Bath">shower</span>
+<span class="material-symbols-outlined text-[20px]" title="Garden Access">yard</span>
+<span class="material-symbols-outlined text-[20px]" title="Wi-Fi">wifi</span>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<a class="font-body-md text-body-md text-primary font-medium hover:underline" href="#">View Details</a>
+<div class="text-right">
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">From</span>
+<span class="font-h3 text-h3 text-on-surface">$180<span class="font-body-md text-body-md text-on-surface-variant font-normal">/night</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Room Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(73,100,85,0.08)] hover:shadow-[0_8px_30px_rgba(73,100,85,0.12)] transition-shadow duration-300">
+<div class="aspect-[3/2] overflow-hidden relative">
+<div class="absolute top-4 left-4 z-10 bg-tertiary-fixed-dim text-on-tertiary-fixed px-3 py-1 rounded-full font-label-caps text-label-caps shadow-sm">Premium</div>
+<img alt="Luxurious suite with minimalist decor, freestanding bathtub, and ambient lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxurious suite with minimalist decor, freestanding bathtub, and ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc1PMVxe9jPPCAgyedW8BTjKxEAjPvCYGwJUZLLCZdLoYmfxSxwNFErHjyDjk1GF4VwYuC7k7rFO2YWBmvrPfADmBMOjgQBiTcQzmGjBKal8-D__Q7_N72o_I6930bQQbIaIZcKAPuARU4kwos7jXiJK9ZFT0RedD9sOmpA252RVGxh76uAIalIh5WO1Yl3Lq4NqxRuj2kPxzY5AKYYbhj8Qt542n8QL_1IcZ9qEuf_BJ2PRDSjBaHni7THIKIm_26By7FX0u8VR4"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">The Timber Loft</h3>
+<div class="flex items-center gap-4 mb-6 text-secondary">
+<span class="material-symbols-outlined text-[20px]" title="King Bed">bed</span>
+<span class="material-symbols-outlined text-[20px]" title="Freestanding Tub">bathtub</span>
+<span class="material-symbols-outlined text-[20px]" title="Balcony">balcony</span>
+<span class="material-symbols-outlined text-[20px]" title="Kitchenette">kitchen</span>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<a class="font-body-md text-body-md text-primary font-medium hover:underline" href="#">View Details</a>
+<div class="text-right">
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">From</span>
+<span class="font-h3 text-h3 text-on-surface">$320<span class="font-body-md text-body-md text-on-surface-variant font-normal">/night</span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="inline-block border border-secondary text-on-surface px-8 py-3 rounded-full font-body-lg text-body-lg hover:bg-surface-container-low transition-colors" href="#">View All Rooms</a>
+</div>
+</section>
+<!-- Story/Gallery Bento Grid -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Story Block -->
+<div class="lg:col-span-5 flex flex-col justify-center p-8 bg-surface-container-lowest rounded-2xl shadow-sm border border-surface-variant/50">
+<span class="font-label-caps text-label-caps text-tertiary mb-4 block">Our Story</span>
+<h2 class="font-h2 text-h2 text-on-surface mb-6">Rooted in Nature,<br/>Refined by Design</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Terra &amp; Timber was born from a desire to create a space that feels inherently connected to the landscape. We've sourced local materials and partnered with artisans to craft an environment that is both deeply grounding and effortlessly elegant.</p>
+<a class="text-primary font-body-md text-body-md font-medium hover:underline flex items-center gap-2 w-max" href="#">
+                            Read Our Story
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Gallery Grid -->
+<div class="lg:col-span-7 grid grid-cols-2 gap-4">
+<div class="col-span-2 sm:col-span-1 rounded-2xl overflow-hidden relative group h-[250px] sm:h-[400px]">
+<div class="absolute inset-0 bg-surface-tint/10 mix-blend-overlay z-10 pointer-events-none"></div>
+<img alt="Close up of artisanal pottery on a rustic wooden table with soft morning light" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of artisanal pottery on a rustic wooden table with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpvEHIupQuhklvnw12uM_SzbgngrxjSShJW_8Wfoc27nz7tgUBRk4qh3zzTyKA4BknfKi6fOCawMTSvZalxta4__CDMKrmiKbM0KJ2BcYIr_8KWfcHlBcU6qnXDZJ6NlHlV7gcRmLuH0yOETvmZ9zBcE_KSTl6rNLJd2kxeygcgdjDbRMwpUJ2KP8ZDEvyT5EFzrw-MKD4YF_p6CBbTpQnpc-vBLvUjYeQbF1im__Ykj4uEibC_LV4Njs5e5dk3zMyf9ld64SCU3w"/>
+</div>
+<div class="grid grid-rows-2 gap-4 col-span-2 sm:col-span-1 h-[500px] sm:h-[400px]">
+<div class="rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-surface-tint/10 mix-blend-overlay z-10 pointer-events-none"></div>
+<img alt="Cozy reading nook with a linen armchair and indoor plants" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Cozy reading nook with a linen armchair and indoor plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDMGN6QBHQcFbtNc80-gD9p9pzZgh1EUn6fJF-U7tnfhzJl3RSCqiXuy06Zq0uu3zRlClLrERMpaFbDOzSvE26rPtvZa63RE3GRqEH1S7iaXNvWayuksr9JkV6cD1rAX-FwQKa-oqgWorKETA7yd7b_M3THhZOEC_IB_R97lgaQs8WJz7YoTXPN2xsUOhKaGIOFpKcqKQRQF8CxmKwjqDLUUFcHHVbyQt4CzzhguoPRAYjJ61_qPp5WY7UrkzPkVng-F7HjPEXLmk"/>
+</div>
+<div class="rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-surface-tint/10 mi
