@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terra &amp; Timber - Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Noto+Serif:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "surface-tint": "#944936",
+                        "secondary-fixed": "#ccead6",
+                        "on-background": "#1b1c19",
+                        "tertiary": "#5d3b14",
+                        "surface": "#fbf9f4",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#b0cdbb",
+                        "primary-container": "#8e4432",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-secondary-fixed-variant": "#324c3e",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb4a3",
+                        "surface-container-low": "#f5f3ee",
+                        "surface-container": "#f0eee9",
+                        "on-secondary-container": "#4f6a5b",
+                        "on-primary-container": "#ffc3b5",
+                        "inverse-surface": "#30312e",
+                        "secondary": "#496455",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary-container": "#fdc895",
+                        "on-secondary-fixed": "#062014",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-container": "#ccead6",
+                        "surface-dim": "#dbdad5",
+                        "primary": "#702e1d",
+                        "tertiary-fixed-dim": "#f0bd8b",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1b1c19",
+                        "outline-variant": "#dac1bc",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary-fixed-variant": "#763221",
+                        "on-tertiary-fixed-variant": "#623f18",
+                        "surface-bright": "#fbf9f4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#54433f",
+                        "on-primary-fixed": "#3c0700",
+                        "primary-fixed": "#ffdad2",
+                        "primary-fixed-dim": "#ffb4a3",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "outline": "#87726e",
+                        "on-tertiary-fixed": "#2c1600",
+                        "background": "#fbf9f4",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#785229",
+                        "tertiary-fixed": "#ffdcbd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "section-gap": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Be Vietnam Pro"],
+                        "h1": ["Noto Serif"],
+                        "h3": ["Noto Serif"],
+                        "label-caps": ["Be Vietnam Pro"],
+                        "h2": ["Noto Serif"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "h2": ["36px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<nav class="bg-stone-50/95 dark:bg-stone-950/95 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm border-b border-stone-200 dark:border-stone-800">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-semibold text-[#8E4432] dark:text-[#A66352]">
+                Terra &amp; Timber
+            </div>
+<div class="hidden md:flex space-x-8 font-serif text-lg tracking-wide">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-1 rounded" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-1 rounded" href="#">Rooms</a>
+<a class="text-[#8E4432] dark:text-[#A66352] border-b-2 border-[#8E4432] dark:border-[#A66352] pb-1 font-bold px-3 py-1" href="#">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-1 rounded" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden lg:flex items-center space-x-2 text-[#8E4432] dark:text-[#A66352] hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-4 py-2 rounded">
+<span class="material-symbols-outlined" data-icon="phone" data-weight="fill" style="font-variation-settings: 'FILL' 1;">phone</span>
+<span class="font-serif text-lg tracking-wide">Call Now</span>
+</button>
+<button class="bg-primary text-on-primary font-serif text-lg tracking-wide px-6 py-2 rounded-DEFAULT shadow-sm hover:opacity-90 transition-opacity">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center w-full px-margin-mobile md:px-gutter py-section-gap">
+<div class="w-full max-w-container-max flex flex-col gap-section-gap">
+<!-- Gallery Header -->
+<section class="text-center space-y-4">
+<h1 class="font-h1 text-h1 text-primary">Visual Sanctuary</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Explore the meticulously curated spaces of Terra &amp; Timber, where organic sophistication meets unparalleled comfort.</p>
+<!-- Category Filters (Decorative) -->
+<div class="flex flex-wrap justify-center gap-4 pt-8">
+<button class="px-6 py-2 rounded-full border border-primary text-primary font-label-caps text-label-caps bg-surface-container-lowest">All</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-colors font-label-caps text-label-caps bg-surface">Exterior</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-colors font-label-caps text-label-caps bg-surface">Interior</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-colors font-label-caps text-label-caps bg-surface">Common Areas</button>
+</div>
+</section>
+<!-- Masonry Gallery Grid -->
+<section class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+<!-- Exterior 1 -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(73,100,85,0.15)] bg-surface-container-lowest">
+<img alt="Exterior facade of rustic luxury cabin nestled in lush green forest during golden hour" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Exterior facade of rustic luxury cabin nestled in lush green forest during golden hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg6loAoLf5bGM6sAIkL6vWaeeDi5nZfNc6dHHuBUMwSWIM2_rrFHroM4AO5niUb3A9_JMv9Y73_qTFlP5QwLYxc0uThF0d2vwrxengoM83KlaTKsUB6UNGi0rKYJlVOmvDmdwWBBqGfXXIHIKr2aqbpBPLeko-GNDG09N4auagj790i6CUnezWZ227_D4b2NDKOvKBGX78yog_8WtNjzGnB3GWkiWjeC2cIDqiin2RI7tihSxxTEvQMrMr1FMBWDR0KnYa1kzPMtQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-surface font-h3 text-h3">The Timber Facade</span>
+</div>
+</div>
+<!-- Interior 1 -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(73,100,85,0.15)] bg-surface-container-lowest">
+<img alt="Warm inviting living room with stone fireplace, leather armchair and large windows" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Warm inviting living room with stone fireplace, leather armchair and large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaRTeoSmzOntOlut3ugZmzsbS0rDdcgDKNjh4dPRzQSUSJBs8JL4MdptRM5fa-GERnkY4Wh3r83wkikRAkVVi_me6Co8OylL6W-deP3-hGPC-wguwJtxlTO6E45PoTG3203aLxcfDKOX9jH50vOzyptzxd8eKDOGgWr1lMr0KKnp1RZOAfc4mgE1xPh1F9QmS6N3LQgKnQQGRvgELzogIMhBpdMqHpNBwOJliiFCroNM9XieLyZLc0miQ8NgSDg2vwJUTj-zcg63U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-surface font-h3 text-h3">Hearth Lounge</span>
+</div>
+</div>
+<!-- Common Areas 1 -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(73,100,85,0.15)] bg-surface-container-lowest">
+<img alt="Elegant dining room with long wooden table set for dinner with warm pendant lighting" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant dining room with long wooden table set for dinner with warm pendant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbruLWl_IR1-zKnIvb1zMF-QkI3WCHspeOVtl7zMX5U2A0acXXlGeviHoWs8CPQAaknswZYZftXv7_HrUatPICjFcIx6yjTFXysFEiKCV4Vle90WdRVG6jTaervrL0kBuAknC_3LESOt0_XkYr5RhcaemzCXPrgX4OuuTmdQC0E6lL8DFZermrPBBGLuA7hb-sRkykFXBFOCPzIEg9EU1ETvkeFEgk7UP2jeH3QlepZB-Bs4IiSm9DGzLR1zVX7Ja47cZ_6jpt1Vo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-surface font-h3 text-h3">Communal Dining</span>
+</div>
+</div>
+<!-- Interior 2 -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(73,100,85,0.15)] bg-surface-container-lowest">
+<img alt="Luxurious master bedroom with four-poster bed and organic cotton linens" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxurious master bedroom with four-poster bed and organic cotton linens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9-TSk4HS80H_ymlP66W2OBf9wagD3E45IyIFuz1Q-Wy3DlSHt9uWwZwoHK9SB94EzvOs_uUiDaHnExLTCdnvFtpn84CriGgRMGpXzjQp0He5wnRfDm3u82IkX48mdZub4SCYU54AoQ9F6lQM7ibUfhtUJ-CiSFJ_Vz86IrY6prvgoaQOcW2vE9jf_aDFIPTRabGreMLJN4Mvsgp4khBHEFPwZKnMJJ86lHUMlNlq35tF9I1kJAKJEC1EjN6IQfNuvmH9U-LNCY3Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-surface font-h3 text-h3">The Canopy Suite</span>
+</div>
+</div>
+<!-- Exterior 2 -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(73,100,85,0.15)] bg-surface-container-lowest">
+<img alt="Serene outdoor patio with fire pit and wooden lounge chairs surrounded by nature" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Serene outdoor patio with fire pit and wooden lounge chairs surrounded by nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMvxS3Plt3Q6avA1vVvLXeiC2KJyOrgWGNAv5xFVT16g5FQVm-q9ic8tCm30kiyLTo4gprllNsEgElSKwT9dL2byeR3IXd6gDIM0vvNaxowQ5W0XIJ3Pq2zwLyoidupQGW0PudQNA82bJARUXECHcFTo045HeBlGR5wtIaK8zFirorekqlbfB3hqcW46KD1B9W4DU0PykiJJzGoML3YM3rTx3i5NDAXFr7PePQ3JUkMc1hNB7sFax2qOYtUPGCJ_B9veai_BEc9mI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-surface font-h3 text-h3">Twilight Terrace</span>
+</div>
+</div>
+<!-- Reception 1 -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(73,100,85,0.15)] bg-surface-container-lowest">
+<img alt="Sophisticated modern rustic reception desk with warm lighting and wooden accents" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sophisticated modern rustic reception desk with warm lighting and wooden accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSPx2jx0Kmu_3KROdFeVzktpbnvM-QD0CQx331GPUp1ImlbDokwStC4QlU1w2skQUw5hBsGCzQKOJkQQYE6G_pvaa1zh9lkJzoEIpKNzIWRnn48tUCMOKeIGEe0W6eKU19h4oBh0AOU61Tstlzbz4R3-pX322ZSb8Kdsg89sO4q_7f1J5CXD_zBkevzKU2cCV5MD74p5v6jH_S1dQtNr0XS-gxTdPZpmhQsBS0U4bAUhpLvzq5UHfk1MUWidvuoOsaxe51v3moGss"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-surface font-h3 text-h3">Welcome Area</span>
+</div>
+</div>
+</section>
+<!-- Location Highlights Section (Asymmetric) -->
+<section class="bg-surface-container rounded-xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 items-center shadow-[0_4px_20px_rgba(73,100,85,0.1)]">
+<div class="w-full lg:w-1/2 space-y-6">
+<h2 class="font-h2 text-h2 text-primary">Beyond the Sanctuary</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">While Terra &amp; Timber offers a retreat from the world, it remains intimately connected to the vibrant surroundings. Discover local culture and natural wonders just moments away.</p>
+<ul class="space-y-4 pt-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="park" data-weight="fill" style="font-variation-settings: 'FILL' 1;">park</span>
+<div>
+<strong class="font-body-lg text-body-lg text-on-background block">Whispering Pines Trailhead</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">2 miles away - Perfect for morning hikes.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="storefront" data-weight="fill" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<div>
+<strong class="font-body-lg text-body-lg text-on-background block">Artisan Village</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">15 min drive - Local crafts and boutique dining.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="train" data-weight="fill" style="font-variation-settings: 'FILL' 1;">train</span>
+<div>
+<strong class="font-body-lg text-body-lg text-on-background block">Valley Central Station</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">20 min drive - Direct connection to the city.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="w-full lg:w-1/2 relative rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(73,100,85,0.15)] aspect-[4/3]">
+<img alt="Scenic map view of mountain valley region showing local landmarks" class="w-full h-full object-cover" data-location="Mountain Valley Region" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAddQMh7OLysJZnfOOcnyABKr2jORqeuyMT9y5Sb0YGtcxAMRakc12k6pniiF-jjwibQ9Bcn6-qfWfJKrJNgvChRusAutajZznd3288yR6FD9-E_O2iNk3J8fz8_8H5t49N8OkYPRFZ9kJfM7PBbIEzACrqiKn6OvmTo2MLxLHDIxiTtX2jAAoT9gzPNDM9je3_qmtdmX7IvpGHFzMvi0Xn4XD-RnmTLFE63nEWDRn1k3LVULX87zWHElvBja_rzrBLwalX4UF_TMI"/>
+<div class="absolute inset-0 bg-secondary/10 mix-blend-multiply"></div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-12 px-8 border-t border-stone-200 dark:border-stone-800">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="text-xl font-serif italic text-stone-800 dark:text-stone-200 mb-6 md:mb-0">
+                Terra &amp; Timber
+            </div>
+<div class="flex flex-col space-y-4 font-serif text-sm leading-relaxed">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">About Us</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">Sustainability</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">Location</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">Terms &amp; Conditions</a>
+</div>
+<div class="font-serif text-sm leading-relaxed text-[#8E4432] dark:text-[#A66352] flex items-end md:justify-end">
+                © 2024 Terra &amp; Timber. A sanctuary of organic sophistication.
+            </div>
+</div>
+</footer>
+</body></html>
