@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rooms - Terra &amp; Timber</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Noto+Serif:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error": "#ffffff",
+                        "surface-tint": "#944936",
+                        "secondary-fixed": "#ccead6",
+                        "on-background": "#1b1c19",
+                        "tertiary": "#5d3b14",
+                        "surface": "#fbf9f4",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#b0cdbb",
+                        "primary-container": "#8e4432",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-secondary-fixed-variant": "#324c3e",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb4a3",
+                        "surface-container-low": "#f5f3ee",
+                        "surface-container": "#f0eee9",
+                        "on-secondary-container": "#4f6a5b",
+                        "on-primary-container": "#ffc3b5",
+                        "inverse-surface": "#30312e",
+                        "secondary": "#496455",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary-container": "#fdc895",
+                        "on-secondary-fixed": "#062014",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-container": "#ccead6",
+                        "surface-dim": "#dbdad5",
+                        "primary": "#702e1d",
+                        "tertiary-fixed-dim": "#f0bd8b",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1b1c19",
+                        "outline-variant": "#dac1bc",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary-fixed-variant": "#763221",
+                        "on-tertiary-fixed-variant": "#623f18",
+                        "surface-bright": "#fbf9f4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#54433f",
+                        "on-primary-fixed": "#3c0700",
+                        "primary-fixed": "#ffdad2",
+                        "primary-fixed-dim": "#ffb4a3",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "outline": "#87726e",
+                        "on-tertiary-fixed": "#2c1600",
+                        "background": "#fbf9f4",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#785229",
+                        "tertiary-fixed": "#ffdcbd"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "margin-mobile": "16px",
+                        base: "8px",
+                        gutter: "24px",
+                        "section-gap": "80px",
+                        "container-max": "1280px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Be Vietnam Pro"],
+                        h1: ["Noto Serif"],
+                        h3: ["Noto Serif"],
+                        "label-caps": ["Be Vietnam Pro"],
+                        h2: ["Noto Serif"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        h1: ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }],
+                        h3: ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+                        "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "600" }],
+                        h2: ["36px", { lineHeight: "1.3", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased pt-24">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-stone-200 dark:border-stone-800 bg-stone-50/95 dark:bg-stone-950/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-semibold text-[#8E4432] dark:text-[#A66352]">Terra &amp; Timber</div>
+<ul class="hidden md:flex gap-8 items-center font-serif text-lg tracking-wide">
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-lg" href="#">Home</a></li>
+<li><a class="text-[#8E4432] dark:text-[#A66352] border-b-2 border-[#8E4432] dark:border-[#A66352] pb-1 font-bold hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-lg" href="#">Rooms</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-lg" href="#">Gallery</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-lg" href="#">Contact</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center gap-2 text-[#8E4432] dark:text-[#A66352] hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 px-4 py-2 rounded-lg font-serif text-lg tracking-wide border border-[#8E4432] dark:border-[#A66352]">
+<span class="material-symbols-outlined">phone</span> Call Now
+                </button>
+<button class="bg-[#8E4432] text-white hover:opacity-80 scale-[0.98] transition-all duration-300 px-6 py-2 rounded-lg font-serif text-lg tracking-wide shadow-sm">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap">
+<!-- Header Section -->
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h1 class="font-h1 text-h1 text-primary mb-6">Our Accommodations</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Discover a sanctuary of organic sophistication. Each room is meticulously designed to offer a blend of tactile comfort and modern minimalism, ensuring a restful retreat.
+            </p>
+</div>
+<!-- Room Listing Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Room Card 1: Deluxe Suite -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(73,100,85,0.08)] flex flex-col group relative">
+<!-- Available Badge -->
+<div class="absolute top-4 right-4 z-10 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps shadow-sm">
+                    Available
+                </div>
+<!-- Image -->
+<div class="aspect-[3/2] w-full relative overflow-hidden bg-surface-variant">
+<img alt="Luxurious deluxe hotel suite with king size bed, warm wood paneling, white linens, and soft natural sunlight pouring through sheer curtains" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Luxurious deluxe hotel suite with king size bed, warm wood paneling, white linens, and soft natural sunlight pouring through sheer curtains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM1lKj5g9FLItAHMVC_U6Tp6PWn-XhruoD79PYkby3IWewRPM-lZkzHLxoKYlATY4mXQm295SRdU3rK961HRKAJjuUEO7DnX3y0ie54GQvcnvC3N9YlT3qyr0XZxaYE3lnPIjZfRa11TnrCvlecK6wTNgyyRz2KDb3M-KOTQOO07nqE8X-LD_mbA-Y3lRE8GPnJz0-VLar-PdnBZJQ3PRZIEan6ttbSyytbEmJIsvdf8BFm92ypaXIaA70xUKudnlwXgVLgvGsAgI"/>
+<div class="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.1)] pointer-events-none"></div>
+</div>
+<!-- Content -->
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h2 class="font-h3 text-h3 text-primary mb-2">The Timber Suite</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Spacious corner suite with panoramic forest views.</p>
+</div>
+</div>
+<!-- Amenities -->
+<div class="flex flex-wrap gap-4 mb-6 pt-4 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">king_bed</span>
+<span>King Bed</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+<span>AC</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span>Up to 3 Guests</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">bathtub</span>
+<span>En-suite</span>
+</div>
+</div>
+<!-- Footer / Actions -->
+<div class="mt-auto pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row justify-between items-center gap-6">
+<div class="text-right sm:text-left w-full sm:w-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-1">Starting from</span>
+<div class="font-h3 text-h3 text-primary">$185 <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ night</span></div>
+</div>
+<div class="flex gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1DA851] text-white px-5 py-3 rounded-lg font-body-md text-body-md transition-colors shadow-sm">
+<span class="material-symbols-outlined">chat</span>
+                                WhatsApp
+                            </button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 border border-primary text-primary hover:bg-primary-container/10 px-5 py-3 rounded-lg font-body-md text-body-md transition-colors">
+<span class="material-symbols-outlined">call</span>
+                                Inquire
+                            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Room Card 2: Standard Room -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(73,100,85,0.08)] flex flex-col group relative">
+<!-- Image -->
+<div class="aspect-[3/2] w-full relative overflow-hidden bg-surface-variant">
+<img alt="Minimalist standard hotel room with queen bed, crisp white sheets, woven textured rug, and soft diffused daylight illuminating potted plants" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Minimalist standard hotel room with queen bed, crisp white sheets, woven textured rug, and soft diffused daylight illuminating potted plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5LitcK1hINkGHe8xDgx2V2MVWIhT2E2dnlsUOG8KPcipz-lSk1L5Ne__OCQmJFRhf1WNjainT6qf59_tMf3N_VmLXmKZpDfB4pwSRvvb5MnnpGWgXGFeX1UAVkSXZvXdmvLh894l_-08_vgj_R8dm4QUgVUf0TnZMq2N49qbTPz_zhfudBJuma0oDx7X4BCdUmPDly3SFN6KN9IvYAECLsbHJhWTbUNkkx-lwE3RfiheCLIZawyqaARkDi6RJle4jMQHDifnBs48"/>
+<div class="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.1)] pointer-events-none"></div>
+</div>
+<!-- Content -->
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h2 class="font-h3 text-h3 text-primary mb-2">The Terra Room</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Comfortable and grounded, ideal for solo travelers or couples.</p>
+</div>
+</div>
+<!-- Amenities -->
+<div class="flex flex-wrap gap-4 mb-6 pt-4 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">bed</span>
+<span>Queen Bed</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">toys_fan</span>
+<span>Non-AC</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span>Up to 2 Guests</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">shower</span>
+<span>Private Bath</span>
+</div>
+</div>
+<!-- Footer / Actions -->
+<div class="mt-auto pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row justify-between items-center gap-6">
+<div class="text-right sm:text-left w-full sm:w-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-1">Starting from</span>
+<div class="font-h3 text-h3 text-primary">$120 <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ night</span></div>
+</div>
+<div class="flex gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1DA851] text-white px-5 py-3 rounded-lg font-body-md text-body-md transition-colors shadow-sm">
+<span class="material-symbols-outlined">chat</span>
+                                WhatsApp
+                            </button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 border border-primary text-primary hover:bg-primary-container/10 px-5 py-3 rounded-lg font-body-md text-body-md transition-colors">
+<span class="material-symbols-outlined">call</span>
+                                Inquire
+                            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Room Card 3: Twin Room -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(73,100,85,0.08)] flex flex-col group relative">
+<!-- Image -->
+<div class="aspect-[3/2] w-full relative overflow-hidden bg-surface-variant">
+<img alt="Elegant twin bedroom with two single beds, earthy toned linens, minimalist wooden furniture, and warm ambient lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Elegant twin bedroom with two single beds, earthy toned linens, minimalist wooden furniture, and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwADLzKautaqxzjnrg5uMhhiK1R0_HxEXzcbUCDD4cjM084X0FjMoT4bUQeO9s6GA2_1oKDZ50Uk2Z9URIzTyTSB60-pxKBmMIYyN7ZHr8MMAYAA1MqglEgPg_QVZHvYiANRXayyNzwzB2yMNUyakF4oyd8byEAA349n2p4jsnwBfj6EAGCWCSUyIpa2_AFZ3rK5hy7M9tjMmpVVtdi35jbQuNK6GTfXabZ0rAOEJurO3DcgpqEhgxdJQ72i9Kg9ZVTqMydl9YxlY"/>
+<div class="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.1)] pointer-events-none"></div>
+</div>
+<!-- Content -->
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h2 class="font-h3 text-h3 text-primary mb-2">The Canopy Twin</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Perfect for friends sharing, featuring our signature organic cotton linens.</p>
+</div>
+</div>
+<!-- Amenities -->
+<div class="flex flex-wrap gap-4 mb-6 pt-4 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">single_bed</span>
+<span>2 Twin Beds</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+<span>AC</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span>Up to 2 Guests</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[20px]">shower</span>
+<span>Private Bath</span>
+</div>
+</div>
+<!-- Footer / Actions -->
+<div class="mt-auto pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row justify-between items-center gap-6">
+<div class="text-right sm:text-left w-full sm:w-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-1">Starting from</span>
+<div class="font-h3 text-h3 text-primary">$140 <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ night</span></div>
+</div>
+<div class="flex gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1DA851] text-white px-5 py-3 rounded-lg font-body-md text-body-md transition-colors shadow-sm">
+<span class="material-symbols-outlined">chat</span>
+                                WhatsApp
+                            </button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 border border-primary text-primary hover:bg-primary-container/10 px-5 py-3 rounded-lg font-body-md text-body-md transition-colors">
+<span class="material-symbols-outlined">call</span>
+                                Inquire
+                            </button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 mt-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<div class="text-xl font-serif italic text-stone-800 dark:text-stone-200">Terra &amp; Timber</div>
+<p class="font-serif text-sm leading-relaxed text-[#8E4432] dark:text-[#A66352] max-w-xs">
+                    © 2024 Terra &amp; Timber. A sanctuary of organic sophistication.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col gap-3">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-sm leading-relaxed" href="#">About Us</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-sm leading-relaxed" href="#">Sustainability</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-sm leading-relaxed" href="#">Location</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors font-serif text-sm leading-relaxed" href="#">Terms &amp; Conditions</a>
+</div>
+<!-- Contact/Social -->
+<div class="flex flex-col gap-4">
+<h3 class="font-label-caps text-label-caps text-stone-500 dark:text-stone-400 uppercase tracking-wider">Connect With Us</h3>
+<div class="flex gap-4 text-stone-500 dark:text-stone-400">
+<a class="
