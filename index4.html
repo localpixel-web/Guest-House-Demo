@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Terra &amp; Timber</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Noto+Serif:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "surface-tint": "#944936",
+                    "secondary-fixed": "#ccead6",
+                    "on-background": "#1b1c19",
+                    "tertiary": "#5d3b14",
+                    "surface": "#fbf9f4",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#b0cdbb",
+                    "primary-container": "#8e4432",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-secondary-fixed-variant": "#324c3e",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#ffb4a3",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-container": "#f0eee9",
+                    "on-secondary-container": "#4f6a5b",
+                    "on-primary-container": "#ffc3b5",
+                    "inverse-surface": "#30312e",
+                    "secondary": "#496455",
+                    "surface-variant": "#e4e2dd",
+                    "on-tertiary-container": "#fdc895",
+                    "on-secondary-fixed": "#062014",
+                    "surface-container-highest": "#e4e2dd",
+                    "secondary-container": "#ccead6",
+                    "surface-dim": "#dbdad5",
+                    "primary": "#702e1d",
+                    "tertiary-fixed-dim": "#f0bd8b",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#1b1c19",
+                    "outline-variant": "#dac1bc",
+                    "surface-container-high": "#eae8e3",
+                    "on-primary-fixed-variant": "#763221",
+                    "on-tertiary-fixed-variant": "#623f18",
+                    "surface-bright": "#fbf9f4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#54433f",
+                    "on-primary-fixed": "#3c0700",
+                    "primary-fixed": "#ffdad2",
+                    "primary-fixed-dim": "#ffb4a3",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "outline": "#87726e",
+                    "on-tertiary-fixed": "#2c1600",
+                    "background": "#fbf9f4",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#785229",
+                    "tertiary-fixed": "#ffdcbd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "section-gap": "80px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-lg": [
+                            "Be Vietnam Pro"
+                    ],
+                    "h1": [
+                            "Noto Serif"
+                    ],
+                    "h3": [
+                            "Noto Serif"
+                    ],
+                    "label-caps": [
+                            "Be Vietnam Pro"
+                    ],
+                    "h2": [
+                            "Noto Serif"
+                    ],
+                    "body-md": [
+                            "Be Vietnam Pro"
+                    ]
+            },
+            "fontSize": {
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "h1": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "h3": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "h2": [
+                            "36px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased pt-24">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-stone-200 dark:border-stone-800 bg-stone-50/95 dark:bg-stone-950/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-semibold text-[#8E4432] dark:text-[#A66352] font-h3 text-h3">
+                Terra &amp; Timber
+            </div>
+<div class="hidden md:flex gap-8 items-center font-serif text-lg tracking-wide">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 duration-300 px-3 py-1 rounded-DEFAULT" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 duration-300 px-3 py-1 rounded-DEFAULT" href="#">Rooms</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors hover:bg-stone-100 dark:hover:bg-stone-900 duration-300 px-3 py-1 rounded-DEFAULT" href="#">Gallery</a>
+<a class="text-[#8E4432] dark:text-[#A66352] border-b-2 border-[#8E4432] dark:border-[#A66352] pb-1 font-bold px-3 hover:bg-stone-100 dark:hover:bg-stone-900 transition-all duration-300 rounded-t-DEFAULT" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center gap-2 text-primary border border-outline px-4 py-2 rounded-full hover:bg-surface-container transition-colors active:opacity-80 active:scale-[0.98]">
+<span class="material-symbols-outlined text-sm" data-icon="phone" data-weight="fill" style="font-variation-settings: 'FILL' 1;">phone</span>
+<span class="font-label-caps text-label-caps">Call Now</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm active:opacity-80 active:scale-[0.98]">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap">
+<!-- Header Section -->
+<header class="text-center mb-section-gap max-w-3xl mx-auto">
+<h1 class="font-h1 text-h1 text-primary mb-base">Get in Touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We look forward to welcoming you to Terra &amp; Timber. Whether you have a question about our rooms, want to plan a special event, or simply need directions, we are here to assist.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-16">
+<!-- Contact Info & Map Column -->
+<div class="lg:col-span-5 flex flex-col gap-12">
+<!-- Info Cards -->
+<div class="space-y-8">
+<div>
+<h3 class="font-h3 text-h3 text-primary mb-4 border-b border-outline-variant pb-2 inline-block">Visit Us</h3>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface mb-1">123 Serenity Lane</p>
+<p class="font-body-md text-body-md text-on-surface mb-4">Whispering Pines, WP 45678</p>
+<button class="flex items-center gap-2 text-primary font-label-caps text-label-caps hover:text-surface-tint transition-colors group">
+<span>Get Directions</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-primary mb-4 border-b border-outline-variant pb-2 inline-block">Contact</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="call" data-weight="fill" style="font-variation-settings: 'FILL' 1;">call</span>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="tel:+15551234567">+1 (555) 123-4567</a>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="mail" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mail</span>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="mailto:hello@terraandtimber.com">hello@terraandtimber.com</a>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-primary mb-4 border-b border-outline-variant pb-2 inline-block">Social</h3>
+<div class="flex gap-4">
+<!-- Placeholder for Social Icons using generic Material Icons for layout -->
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+</a>
+<a aria-label="Google Business" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="rounded-xl overflow-hidden shadow-sm aspect-video lg:aspect-square bg-surface-container-high relative group">
+<img alt="Map Location" class="w-full h-full object-cover opacity-80 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100" data-alt="Stylized, minimalist map view showing a remote, scenic location near a forest edge, soft warm color palette" data-location="Whispering Pines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCccKsBERjgpaDLVoIM0CTx1pBEI4IPQQrmv-Sv_XVMy4po3j2-POAVAYR_Yt5bXLwREQfT7sm2fZrj12kxFyr2zRkffdErD26vQdF_YeqOzJ-0N413R5ogUzGYozRKJKpwrngEqgVWFPs8aWeopZtVfzRDHw4O-YrszQmmuFFv-HDozCxNGdQ53lsn57BEE0x2O2LdTeXaD_77yecmrgWoFJKlph0zSN_W2T5V8iy6uocR1bz0kXLUaeLdoy8HLFf29O_YqLuN4WA"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-md animate-bounce">
+<span class="material-symbols-outlined text-on-primary" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Column -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-8 lg:p-12 border border-surface-variant relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-fixed-dim opacity-20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+<h2 class="font-h2 text-h2 text-primary mb-8 relative z-10">Send an Inquiry</h2>
+<form class="space-y-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-on-surface focus:ring-0 focus:border-primary peer transition-colors font-body-md text-body-md" id="firstName" placeholder=" " type="text"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-body-md text-body-md transition-all peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-primary peer-focus:font-label-caps peer-[:not(:placeholder-shown)]:-top-3.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-on-surface-variant peer-[:not(:placeholder-shown)]:font-label-caps cursor-text" for="firstName">First Name</label>
+</div>
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-on-surface focus:ring-0 focus:border-primary peer transition-colors font-body-md text-body-md" id="lastName" placeholder=" " type="text"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-body-md text-body-md transition-all peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-primary peer-focus:font-label-caps peer-[:not(:placeholder-shown)]:-top-3.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-on-surface-variant peer-[:not(:placeholder-shown)]:font-label-caps cursor-text" for="lastName">Last Name</label>
+</div>
+</div>
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-on-surface focus:ring-0 focus:border-primary peer transition-colors font-body-md text-body-md" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-body-md text-body-md transition-all peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-primary peer-focus:font-label-caps peer-[:not(:placeholder-shown)]:-top-3.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-on-surface-variant peer-[:not(:placeholder-shown)]:font-label-caps cursor-text" for="email">Email Address</label>
+</div>
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-on-surface focus:ring-0 focus:border-primary peer transition-colors font-body-md text-body-md" id="phone" placeholder=" " type="tel"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-body-md text-body-md transition-all peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-primary peer-focus:font-label-caps peer-[:not(:placeholder-shown)]:-top-3.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-on-surface-variant peer-[:not(:placeholder-shown)]:font-label-caps cursor-text" for="phone">Phone Number (Optional)</label>
+</div>
+<div class="relative">
+<select class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-on-surface focus:ring-0 focus:border-primary peer transition-colors font-body-md text-body-md appearance-none" id="inquiryType" placeholder=" ">
+<option disabled="" hidden="" selected="" value=""></option>
+<option value="booking">Room Booking</option>
+<option value="event">Special Event</option>
+<option value="general">General Question</option>
+</select>
+<label class="absolute left-0 top-3 text-on-surface-variant font-body-md text-body-md transition-all peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-primary peer-focus:font-label-caps peer-[:not(:placeholder-shown)]:-top-3.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-on-surface-variant peer-[:not(:placeholder-shown)]:font-label-caps pointer-events-none" for="inquiryType">Subject</label>
+<span class="material-symbols-outlined absolute right-0 top-4 text-on-surface-variant pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+<div class="relative pt-4">
+<textarea class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-on-surface focus:ring-0 focus:border-primary peer transition-colors font-body-md text-body-md resize-none" id="message" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 top-7 text-on-surface-variant font-body-md text-body-md transition-all peer-focus:top-0 peer-focus:text-xs peer-focus:text-primary peer-focus:font-label-caps peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-on-surface-variant peer-[:not(:placeholder-shown)]:font-label-caps cursor-text" for="message">Your Message</label>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-8 py-4 rounded-full font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-[0_4px_14px_rgba(142,68,50,0.15)] flex items-center justify-center gap-2 mt-8" type="button">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-sm" data-icon="send" data-weight="fill" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-serif italic text-stone-800 dark:text-stone-200">Terra &amp; Timber</span>
+<p class="font-serif text-sm leading-relaxed text-[#8E4432] dark:text-[#A66352]">© 2024 Terra &amp; Timber. A sanctuary of organic sophistication.</p>
+</div>
+<div class="md:col-span-2 flex flex-wrap gap-6 md:justify-end items-start font-serif text-sm leading-relaxed">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">About Us</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">Sustainability</a>
+<a class="text-[#8E4432] underline hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">Location</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8E4432] dark:hover:text-[#A66352] transition-colors" href="#">Terms &amp; Conditions</a>
+</div>
+</div>
+</footer>
+<!-- WhatsApp FAB (Sticky Mobile) -->
+<a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 md:hidden w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-lg flex items-center justify-center z-50 hover:bg-secondary-container hover:t
